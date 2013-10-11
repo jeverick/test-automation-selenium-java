@@ -7,6 +7,14 @@ import org.openqa.selenium.WebDriver;
 public class Links {
 
     public static void clickLink(WebDriver driver, String identifyBy, String locator) {
+        /**
+         * Method to select a link
+         *
+         * Accepts:
+         *   - driver: the current test's WebDriver
+         *   - identityBy: the type of locator to use (ie: xpath, id, etc...)
+         *   - locator: the actual location value used by the identityBy attribute
+         */
         if (identifyBy.equalsIgnoreCase("xpath")) {
             driver.findElement(By.xpath(locator)).click();
 
