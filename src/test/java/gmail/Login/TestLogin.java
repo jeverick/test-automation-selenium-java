@@ -33,7 +33,7 @@ public class TestLogin extends Base {
         pressButton(driver, "id", "signIn");
     }
 
-    private Boolean stillAtLogin() {
+    private boolean stillAtLogin() {
         String current  = driver.getCurrentUrl();
         String loginUrl = "https://accounts.google.com/ServiceLoginAuth";
 
