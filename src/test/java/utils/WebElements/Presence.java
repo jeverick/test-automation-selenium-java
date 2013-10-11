@@ -21,7 +21,6 @@ public class Presence {
 
         } catch (Exception e) {
             // do nothing
-
         }
         return false;
     }

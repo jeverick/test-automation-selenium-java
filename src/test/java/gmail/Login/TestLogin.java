@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.*;
-import static utils.WebElementHelpers.elementIsPresent;
+import static utils.WebElements.Presence.elementIsPresent;
 
 public class TestLogin extends Base {
 
@@ -28,9 +28,9 @@ public class TestLogin extends Base {
             emailField.clear();
         }
 
-        typeinEditbox(driver, "id", "Email", username);
-        typeinEditbox(driver, "id", "Passwd", password);
-        clickButton(driver, "id", "signIn");
+        fillTextInput(driver, "id", "Email", username);
+        fillTextInput(driver, "id", "Passwd", password);
+        pressButton(driver, "id", "signIn");
     }
 
     private Boolean stillAtLogin() {
