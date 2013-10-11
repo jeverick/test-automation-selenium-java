@@ -21,7 +21,7 @@ public class Base {
     }
 
     @AfterClass
-    public static void tareDownAfterClass() {
+    public static void tearDownAfterClass() {
         driver.close();
     }
 
