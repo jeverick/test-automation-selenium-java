@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class UrlHelpers {
+public class Urls {
 
     public static int getHTTPResponseStatusCode(String u) throws IOException {
 
