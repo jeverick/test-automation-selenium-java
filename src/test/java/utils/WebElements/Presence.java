@@ -1,4 +1,4 @@
-package utils;
+package utils.WebElements;
 
 
 import org.openqa.selenium.By;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WebElements {
+public class Presence {
 
     public static boolean elementIsPresent(WebDriver driver, By location, int wait) {
         /**
