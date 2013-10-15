@@ -12,12 +12,12 @@ import static utils.WebElements.Presence.elementIsPresent;
 public class TestLogin extends Base {
 
     // Should be valid credentials
-    private final String validUsername = "myEmail@gmail.com";
-    private final String validPass = "secret";
+    String validUsername = "myEmail@gmail.com";
+    String validPass = "secret";
 
     // Should be invalid credentials
-    private final String invalidUsername = "randomEmail@gmail.com";
-    private final String invalidPass = "wrongSecret";
+    String invalidUsername = "randomEmail@gmail.com";
+    String invalidPass = "wrongSecret";
 
     private void submitForm(String username, String password) {
 
